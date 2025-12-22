@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { User, UserCard } from "../../components/UserCard/UserCard";
+import { UserCard } from "../../components/UserCard/UserCard";
 
 // TODO importer les utilisateurs du fichier "/assets/data/users.js"
 

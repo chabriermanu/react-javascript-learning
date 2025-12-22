@@ -1,4 +1,8 @@
 
+/**
+ * Composant qui correspond à la page principale de l'application. La joie.
+ * 
+ */
 const HomePage = () => {
 
     return (

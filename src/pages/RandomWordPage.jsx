@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
  * - Unmount : le démontage. C’est étape a lieu quand un composant est retiré du DOM.
  * 
  * 
- * TODO : 
+ * TODO test
  * Etudiez le code suivant et ajoutez des message utilisateurs en « alert() » à plusieurs niveaux (et uniquement en modifiant le code des fonctions anonymes passées aux « useEffect ».
  * Ajoutez l’affichage des messages suivants aux bon endroits du code :
  * - « Clic sur le bouton de génération de mot 1 »
@@ -23,8 +23,8 @@ import { useEffect, useState } from "react";
  */
 const RandomWordPage = () => {
     console.log("Rendering component...");
-    const [firstWord, setFirstWord] = useState<string>("");
-    const [secondWord, setSecondWord] = useState<string>("");
+    const [firstWord, setFirstWord] = useState("");
+    const [secondWord, setSecondWord] = useState("");
 
     useEffect(() => {
         // TODO mettre quelque chose ici
@@ -71,7 +71,7 @@ const RandomWordPage = () => {
     /**
      * Génère un mot aléatoire
      */
-    const generateRandomWord = (): string => {
+    const generateRandomWord = () => {
         return Math.random().toString(36).replace(/[^a-z]+/g, '');
     }
 

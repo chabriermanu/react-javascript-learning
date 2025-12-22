@@ -10,6 +10,10 @@ import RandomWordPage from './pages/RandomWordPage';
 import UsersPage from './pages/UsersPage/UsersPage';
 import DomModificationPage from './pages/DomModification/DomModificationPage';
 
+/**
+ *
+ * Composant principal de toute l'application
+ */
 function App() {
 
   return (

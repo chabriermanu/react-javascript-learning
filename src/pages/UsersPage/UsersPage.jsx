@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import { UserCard } from "../../components/UserCard/UserCard";
 
 //importer les utilisateurs du fichier "/assets/data/users.js"
-import {users} from "../../assets/data/users";
+import { users } from "../../assets/data/users";
 
-
-// TODO ajouter le css modulaire pour cette page
+// Importer le css modulaire pour cette page
+import style from "./UsersPage.module.css";
 
 const UsersPage = () => {
     // Déclaration d'un state permettant de stocker les utilisateur

@@ -27,29 +27,30 @@ const RandomWordPage = () => {
     const [secondWord, setSecondWord] = useState("");
 
     useEffect(() => {
-        // TODO mettre quelque chose ici
         // Question, quand se déclenche la fonction associée à ce "useEffect" ?
+        // Le useEffect se declenche au montage + à chaque changement de valeur
     }, [firstWord]);
 
     useEffect(() => {
-        // TODO mettre quelque chose ici
         // Question, quand se déclenche la fonction associée à ce "useEffect" ?
+        //Le useEffect se declenche au montage +  à chaque changement de valeur 
     }, [secondWord]);
 
     useEffect(() => {
-        // TODO mettre quelque chose ici
-        // Question, quand se déclenche la fonction associée à ce "useEffect" ?
-    }, []) // tableau de dépendances à des variables d'état vide ! Qu'est ce ça fait ?
+        // Ne se declenche qu'une seule fois au montage du composant. C'est l'equivalent du componentDidMount
+        // tableau de dépendances à des variables d'état vide ! Qu'est ce ça fait ? Reccupère des données au chargement, 
+        // initier un listner, lancer un timer.
+    }, []) 
 
     useEffect(() => {
-        // TODO mettre quelque chose ici
         // Question, quand se déclenche la fonction associée à ce "useEffect" ?
-
+        // la fonction principale se declanche au montage et a chaque mise a jour (n'importe quel state/ prop qui change) 
+        // la fonction secondaire  s'execute juste avant chaque re-éxécution de l'effetdonc : avant MAJ et au demontage du coposant.
 
         // Si dans une lambda de useEffect nous avons un "return" alors nous pouvons renvoyer une fonction de démontage
         // Cette fonction sera déclenchée lorsque le composant sera retiré du DOM (par exemple si nous changeons de page)
         return () => {
-            // TODO : Mettre ici le code à exécuter lors du démontage
+            alert("Nettoyage !")
             // Par exemple : ajoutez un appel à la fonction Javascript « alert() » permettant d'indiquer un message particulier
         };
     });

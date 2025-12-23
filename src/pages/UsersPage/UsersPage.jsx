@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 
 import { UserCard } from "../../components/UserCard/UserCard";
 
-// TODO importer les utilisateurs du fichier "/assets/data/users.js"
+//importer les utilisateurs du fichier "/assets/data/users.js"
+import {users} from "../../assets/data/users";
+
 
 // TODO ajouter le css modulaire pour cette page
 
